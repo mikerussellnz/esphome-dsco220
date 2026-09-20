@@ -18,7 +18,7 @@ CONFIG_SCHEMA = (
         icon=ICON_MOLECULE_CO2,
         accuracy_decimals=0,
     )
-    .extend(cv.polling_component_schema("10s"))
+    .extend(cv.polling_component_schema("5s"))
     .extend(uart.UART_DEVICE_SCHEMA)
 )
 
